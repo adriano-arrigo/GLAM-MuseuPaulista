@@ -1,4 +1,4 @@
-# GLAM Museu Paulista
+# Nova página para o GLAM Museu Paulista
 
 Proposta de página GLAM do **Museu Paulista** para apresentação e organização de conteúdos relacionados à atuação do museu nos projetos Wikimedia.
 
