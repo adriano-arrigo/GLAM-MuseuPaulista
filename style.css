@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+.menu-wiki-simulado {
+    text-align: right;
+}
+
+.menu-wiki-simulado a {
+    margin-left: 20px;
+}
+
+.menu-wiki-simulado a:first-child {
+    margin-left: 0;
+}
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #111111;
+}
+
+main {
+    width: 100%;
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+    display: flex;
+    min-height: 500px;
+}
+
+.hero-image {
+    flex: 1.2;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content {
+    flex: 0.8;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kicker {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+}
+
+.hero h1 {
+    font-size: clamp(4rem, 8vw, 8rem);
+    line-height: 0.9;
+    margin: 15px 0 25px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    max-width: 30rem;
+}
+
+
+/* =========================
+   BLOCOS
+   ========================= */
+
+.glam-block {
+    display: flex;
+    width: 100%;
+    min-height: 420px;
+}
+
+.glam-block.reverse .glam-image {
+    order: 2;
+}
+
+.glam-block.reverse .glam-content {
+    order: 1;
+}
+
+.glam-image {
+    flex: 1;
+}
+
+.glam-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.glam-content {
+    flex: 1;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.glam-content h2 {
+    font-size: clamp(2rem, 4vw, 4rem);
+    line-height: 1;
+    margin: 0 0 20px;
+}
+
+.glam-content p {
+    max-width: 45rem;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+/* =========================
+   CONHEÇA TAMBÉM
+   ========================= */
+
+.conheca-tambem {
+    background: #000000;
+    padding: 50px 60px 60px;
+}
+
+.conheca-tambem h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 0 0 30px;
+}
+
+.conheca-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.conheca-card {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.conheca-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.conheca-card span {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.conheca-card:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   BOTÃO
+   ========================= */
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 24px;
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    width: fit-content;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-image {
+        min-height: 320px;
+    }
+
+    .hero-content {
+        padding: 40px 25px;
+    }
+
+    .glam-block {
+        flex-direction: column;
+    }
+
+    /*
+     * No celular, removemos a inversão.
+     * Todos os blocos ficam:
+     *
+     * IMAGEM
+     * TEXTO
+     */
+
+    .glam-block.reverse .glam-image,
+    .glam-block.reverse .glam-content {
+        order: initial;
+    }
+
+    .glam-image {
+        min-height: 280px;
+    }
+
+    .glam-content {
+        padding: 40px 25px;
+    }
+
+
+}
